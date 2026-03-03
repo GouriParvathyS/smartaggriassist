@@ -1,8 +1,8 @@
-import Fertilizer from "./components/Fertilizer";
+import Fertilizer from "./components/Login";
 import Login from "./components/Fertilizer";
 
 function App() {
-  return <Fertilizer />;
+  return <Login />;
 }
 
 export default App;
