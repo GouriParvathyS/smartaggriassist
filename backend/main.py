@@ -61,21 +61,6 @@ class CropRequest(BaseModel):
 # HEALTH CHECK
 # =========================
 
-<<<<<<< HEAD
-app = FastAPI(title="SmartAgriAssist Market Backend")
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:5174",
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-=======
 @app.get("/")
 def health_check():
     return {"status": "Backend running"}
@@ -99,7 +84,6 @@ def crop_recommendation(data: CropRequest):
 # =========================
 # FERTILIZER RECOMMENDATION API
 # =========================
->>>>>>> a0c2f7ae90be4c8779403532f19d2e8c6d3dc031
 
 @app.post("/predict-fertilizer")
 def fertilizer_endpoint(request: FertilizerRequest):
